@@ -1,6 +1,3 @@
-from numpy import split
-import pandas as pd
-
 class MSTeamsAttendanceProcessor:
 
     def __init__(self, fileCsvDetails):
@@ -88,10 +85,4 @@ class MSTeamsAttendanceProcessor:
         MsList.append(self.totalAttendees)
         return MsList
 
-someString = "Meeting Summary \nTotal Number of Participants	2\nMeeting Title	Devops project \nMeeting Start Time	12/10/2021, 7:37:51 PM\nMeeting End Time	12/10/2021, 8:07:14 PM\nMeeting Id	453adbad-3672-4bde-92d0-6be3049eb379\nNeeti Sharma	12/10/2021, 7:37:51 PM	12/10/2021, 8:07:14 PM	29m 22s	x20242778@student.ncirl.ie	Organiser	x20242778@student.ncirl.ie\nParag Sharad Salunkhe	12/10/2021, 7:38:13 PM	12/10/2021, 8:07:12 PM	28m 58s	x20224699@student.ncirl.ie	Presenter	x20224699@student.ncirl.ie"
-
-TeamsProc = MSTeamsAttendanceProcessor(someString) 
-output = TeamsProc.getAttendeesDetailsAsDict()
-print(output)
-print(type(output))
 
