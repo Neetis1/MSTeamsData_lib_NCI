@@ -2,7 +2,7 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:long_description = fh.read()
 setuptools.setup(
 name="MSTeamsdataretrieval_neeti_sharma1",
-version="0.0.1",
+version="0.0.2",
 author="Neeti",
 author_email="sharma1992nee@gmail.com",
 description="A library to handle MSTeams Attendance report",
